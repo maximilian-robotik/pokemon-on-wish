@@ -1,0 +1,7 @@
+scene.setBackgroundImage(assets.image`cityscape`)
+let mySprite = sprites.create(assets.image`player 1`, SpriteKind.Player)
+scene.cameraFollowSprite(mySprite)
+let statusbar = statusbars.create(40, 4, StatusBarKind.Health)
+statusbar.setLabel("HP")
+statusbar.setColor(7, 2)
+controller.moveSprite(mySprite)
